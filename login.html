@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login - SWOO TECH MART</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+
+    <!-- LOGO -->
+
+    <div class="logo-area">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="logo-text">
+
+            <h1>SWOO</h1>
+
+            <span>TECH MART</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <a href="index.html">
+            HOMES
+        </a>
+
+        <a href="products.html">
+            PRODUCTS
+        </a>
+
+        <a href="contact.html">
+            CONTACT
+        </a>
+
+    </nav>
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="header-actions">
+
+        <!-- Login -->
+
+        <a href="login.html"
+           class="login-link active">
+
+            <i class="fa-regular fa-user"></i>
+
+        </a>
+
+
+        <!-- Wishlist -->
+
+        <a href="wishlist.html"
+           class="wishlist-link">
+
+            <i class="fa-regular fa-heart"></i>
+
+            <span class="wishlist-count"
+                  id="wishlistCount">
+                0
+            </span>
+
+        </a>
+
+
+        <!-- Cart -->
+
+        <a href="cart.html"
+           class="cart-link">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count"
+                  id="cartCount">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+
+    <button class="menu-btn"
+            id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+
+<!-- ================= LOGIN SECTION ================= -->
+
+<main class="auth-page">
+
+    <div class="auth-container">
+
+
+        <!-- LOGIN CARD -->
+
+        <div class="auth-card">
+
+
+            <!-- TITLE -->
+
+            <div class="auth-header">
+
+                <div class="auth-icon">
+
+                    <i class="fa-regular fa-user"></i>
+
+                </div>
+
+                <h1>Welcome Back</h1>
+
+                <p>
+                    Login to your SWOO TECH MART account
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="togglePassword"
+                        >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORGOT PASSWORD -->
+
+                <div class="form-options">
+
+                    <label class="remember-me">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+
+                    <a href="#"
+                       id="forgotPassword">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="auth-btn"
+                >
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Login
+
+                </button>
+
+
+            </form>
+
+
+            <!-- DIVIDER -->
+
+            <div class="auth-divider">
+
+                <span>OR</span>
+
+            </div>
+
+
+            <!-- GOOGLE LOGIN -->
+
+            <button
+                type="button"
+                class="google-btn"
+                id="googleLoginBtn"
+            >
+
+                <i class="fa-brands fa-google"></i>
+
+                Continue with Google
+
+            </button>
+
+
+            <!-- REGISTER -->
+
+            <div class="auth-switch">
+
+                <p>
+                    Don't have an account?
+                </p>
+
+                <a href="register.html">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+
+        <div>
+
+            <h2>SWOO</h2>
+
+            <p>
+                TECH MART
+            </p>
+
+            <p>
+                Your trusted destination for modern
+                technology and electronics.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Customer Service</h3>
+
+            <a href="login.html">
+                My Account
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Shopping Cart
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SWOO TECH MART. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JavaScript -->
+
+<script src="js/main.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/wishlist.js"></script>
+
+<script type="module" src="js/login.js"></script>
+
+</body>
+
+</html>
+```

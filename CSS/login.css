@@ -1,0 +1,566 @@
+/* =========================================
+   SWOO TECH MART - LOGIN PAGE
+========================================= */
+
+
+/* =========================================
+   LOGIN PAGE AREA
+========================================= */
+
+.auth-page {
+    width: 100%;
+    min-height: calc(100vh - 160px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+
+    background: #f5f7fa;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGIN CONTAINER
+========================================= */
+
+.auth-container {
+    width: 100%;
+    max-width: 580px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.auth-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    padding: 48px 55px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   WELCOME HEADER
+========================================= */
+
+.auth-header {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   USER ICON
+========================================= */
+
+.auth-icon {
+    width: 78px;
+    height: 78px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #002b5c;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   WELCOME BACK HEADING
+========================================= */
+
+.auth-header h1 {
+    margin: 0 0 10px;
+
+    color: #222222;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   SUB HEADING
+========================================= */
+
+.auth-header p {
+    margin: 0;
+
+    color: #777777;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   INPUT ICON
+========================================= */
+
+.input-wrapper > i {
+    position: absolute;
+
+    left: 16px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #777777;
+
+    font-size: 15px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.input-wrapper input {
+    width: 100%;
+
+    height: 48px;
+
+    box-sizing: border-box;
+
+    padding: 0 45px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.input-wrapper input:focus {
+    border-color: #002b5c;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 43, 92, 0.08);
+}
+
+
+/* =========================================
+   PASSWORD TOGGLE
+========================================= */
+
+.password-toggle {
+    position: absolute;
+
+    right: 12px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding: 5px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777777;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FORM OPTIONS
+========================================= */
+
+.form-options {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   REMEMBER ME
+========================================= */
+
+.remember-me {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #666666;
+
+    cursor: pointer;
+}
+
+
+.remember-me input {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   FORGOT PASSWORD
+========================================= */
+
+.form-options a {
+    color: #002b5c;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.auth-btn {
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #002b5c;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.auth-btn:hover {
+    background: #003b7c;
+
+    transform: translateY(-1px);
+}
+
+
+.auth-btn i {
+    margin-right: 7px;
+}
+
+
+/* =========================================
+   OR DIVIDER
+========================================= */
+
+.auth-divider {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 28px 0;
+
+    color: #999999;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #dddddd;
+}
+
+
+/* =========================================
+   GOOGLE BUTTON
+========================================= */
+
+.google-btn {
+    width: 100%;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.google-btn:hover {
+    background: #f7f7f7;
+
+    border-color: #cccccc;
+}
+
+
+.google-btn i {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   SIGN UP SECTION
+========================================= */
+
+.auth-switch {
+    width: 100%;
+
+    margin-top: 27px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.auth-switch p {
+    display: inline;
+
+    margin: 0;
+
+    color: #777777;
+}
+
+
+.auth-switch a {
+    margin-left: 5px;
+
+    color: #002b5c;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .auth-page {
+        min-height: auto;
+
+        padding: 50px 20px;
+    }
+
+    .auth-container {
+        max-width: 540px;
+    }
+
+    .auth-card {
+        padding: 42px 40px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .auth-page {
+        min-height: auto;
+
+        padding: 40px 15px;
+    }
+
+    .auth-container {
+        max-width: 100%;
+    }
+
+    .auth-card {
+        padding: 35px 22px;
+
+        border-radius: 12px;
+    }
+
+    .auth-icon {
+        width: 68px;
+        height: 68px;
+
+        font-size: 26px;
+
+        margin-bottom: 17px;
+    }
+
+    .auth-header h1 {
+        font-size: 29px;
+    }
+
+    .auth-header p {
+        font-size: 14px;
+    }
+
+    .form-options {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .auth-card {
+        padding: 30px 18px;
+    }
+
+    .auth-header h1 {
+        font-size: 26px;
+    }
+
+    .form-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}

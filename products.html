@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - SWOO TECH MART</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Products CSS -->
+    <link rel="stylesheet" href="css/products.css">
+
+    <!-- Responsive CSS -->
+    <link rel="" href="css/responsive.css">
+
+    
+</head>
+
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+
+    <!-- LOGO -->
+    <div class="logo-area">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="logo-text">
+            <h1>SWOO</h1>
+            <span>TECH MART</span>
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <a href="index.html">HOMES</a>
+
+        <a href="products.html" class="active">
+            PRODUCTS
+        </a>
+
+        <a href="contact.html">
+            CONTACT
+        </a>
+
+    </nav>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="header-actions">
+
+        <!-- Login -->
+        <a href="login.html" class="login-link">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="wishlist-link">
+    <i class="fa-regular fa-heart"></i>
+    <span class="wishlist-count" id="wishlistCount">0</span>
+</a>
+
+        <!-- Cart -->
+        <a href="cart.html" class="cart-link">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-count" id="cartCount">0</span>
+</a>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- ================= SEARCH BAR ================= -->
+
+<section class="search-section">
+
+    <div class="search-wrapper">
+
+        <div class="category-select">
+
+            <strong>All Categories</strong>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search anything..."
+        >
+
+
+        <button id="productSearchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+    </div>
+
+
+    <div class="shipping-info">
+
+        <strong>FREE SHIPPING OVER $199</strong>
+
+        <strong>30 DAYS MONEY BACK</strong>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS BANNER ================= -->
+
+<section class="products-banner">
+
+    <div>
+
+        <h1>Our Products</h1>
+
+        <p>
+            Discover the latest technology and electronics
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS SECTION ================= -->
+
+<section class="products-section">
+
+    <!-- TOP AREA -->
+
+    <div class="products-top">
+
+        <div>
+
+            <h2>Featured Products</h2>
+
+            <p>
+                Find the perfect technology for you
+            </p>
+
+        </div>
+
+
+        <!-- SORT -->
+
+        <div class="sort-area">
+
+            <label for="sortProducts">
+                Sort By:
+            </label>
+
+            <select id="sortProducts">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- CATEGORY FILTER -->
+
+    <div class="category-buttons">
+
+        <button class="category-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="category-btn" data-category="phone">
+            Phones
+        </button>
+
+        <button class="category-btn" data-category="laptop">
+            Laptops
+        </button>
+
+        <button class="category-btn" data-category="tablet">
+            Tablets
+        </button>
+
+        <button class="category-btn" data-category="audio">
+            Audio
+        </button>
+
+        <button class="category-btn" data-category="watch">
+            Smart Watches
+        </button>
+
+        <button class="category-btn" data-category="camera">
+            Cameras
+        </button>
+
+        <button class="category-btn" data-category="gaming">
+            Gaming
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS WILL LOAD HERE -->
+
+    <div
+        class="products-grid"
+        id="productsContainer">
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>SWOO</h2>
+
+            <p>
+                TECH MART
+            </p>
+
+            <p>
+                Your trusted destination for modern
+                technology and electronics.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Customer Service</h3>
+
+            <a href="#">My Account</a>
+
+            <a href="#">Wishlist</a>
+
+            <a href="#">Shopping Cart</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SWOO TECH MART. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="js/main.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+<script src="js/wishlist.js"></script>
+</body>
+</html>

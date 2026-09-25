@@ -1,0 +1,410 @@
+/* =========================================
+   PRODUCTS PAGE
+========================================= */
+
+.products-banner {
+    width: 100%;
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 7%;
+
+    background: #f3f4f7;
+}
+
+.products-banner h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.products-banner p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* =========================================
+   PRODUCTS SECTION
+========================================= */
+
+.products-section {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 50px auto;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.products-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.products-top h2 {
+    font-size: 32px;
+
+    margin-bottom: 6px;
+}
+
+.products-top p {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   SORT
+========================================= */
+
+.sort-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.sort-area label {
+    font-weight: 600;
+}
+
+.sort-area select {
+    padding: 12px 35px 12px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CATEGORY BUTTONS
+========================================= */
+
+.category-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+.category-btn {
+    padding: 11px 20px;
+
+    border: 1px solid #ddd;
+
+    background: white;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.category-btn:hover {
+    background: #0fc51a;
+
+    color: white;
+
+    border-color: #0fc51a;
+}
+
+.category-btn.active {
+    background: #0fc51a;
+
+    color: white;
+
+    border-color: #0fc51a;
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card {
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.product-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+
+   /* =========================================
+   PRODUCT IMAGE - FIXED SIZE
+========================================= */
+
+.product-image {
+    width: 100%;
+    height: 260px !important;
+    min-height: 260px;
+    background: #f5f6f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 260px !important;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-card:hover .product-image img {
+
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   WISHLIST
+========================================= */
+
+.product-wishlist {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    z-index: 2;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.08);
+}
+
+.product-wishlist:hover {
+
+    color: #ff3030;
+}
+
+
+/* =========================================
+   PRODUCT INFO
+========================================= */
+
+.product-info {
+
+    padding: 20px;
+}
+
+.product-category {
+
+    color: #0fc51a;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.product-name {
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    min-height: 46px;
+}
+
+.product-description {
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.product-price {
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   ADD TO CART
+========================================= */
+
+.add-cart-btn {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #0fc51a;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-cart-btn:hover {
+
+    background: #0aa814;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   NO PRODUCTS
+========================================= */
+
+.no-products {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    color: #777;
+}
+
+.no-products i {
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+    color: #ccc;
+}
+
+.no-products h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   BODY BACKGROUND
+========================================= */
+
+body {
+
+    background: #f7f8fa;
+}

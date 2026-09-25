@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - SWOO TECH MART</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <!-- Product Details CSS -->
+    <link rel="stylesheet"
+          href="css/product-details.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet"
+          href="css/responsive.css">
+         
+          <link rel="stylesheet" href="css/cart.css">
+
+        
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+
+    <!-- LOGO -->
+
+    <div class="logo-area">
+
+        <div class="logo-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <div class="logo-text">
+
+            <h1>SWOO</h1>
+
+            <span>TECH MART</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <a href="index.html">
+            HOMES
+        </a>
+
+        <a href="products.html">
+            PRODUCTS
+        </a>
+
+        <a href="contact.html">
+            CONTACT
+        </a>
+       
+    </nav>
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="header-actions">
+
+        <a href="login.html"
+           class="login-link">
+
+            <i class="fa-regular fa-user"></i>
+
+        </a>
+
+
+        <a href="wishlist.html" class="wishlist-link">
+
+    <i class="fa-regular fa-heart"></i>
+
+    <span class="wishlist-count" id="wishlistCount">0</span>
+
+</a>
+
+
+        <a href="cart.html" class="cart-link">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-count" id="cartCount">0</span>
+</a>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+
+    <button class="menu-btn"
+            id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+
+<!-- ================= SEARCH BAR ================= -->
+
+<section class="search-section">
+
+    <div class="search-wrapper">
+
+        <div class="category-select">
+
+            <strong>
+                All Categories
+            </strong>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search anything..."
+        >
+
+
+        <button id="productSearchBtn">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+
+    </div>
+
+
+    <div class="shipping-info">
+
+        <strong>
+            FREE SHIPPING OVER $199
+        </strong>
+
+        <strong>
+            30 DAYS MONEY BACK
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRODUCT DETAILS ================= -->
+
+<main class="product-details-section">
+
+    <!-- Back Button -->
+
+    <a href="products.html"
+       class="back-products">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back to Products
+
+    </a>
+
+
+    <!-- Product -->
+
+    <div class="product-details-container">
+
+
+        <!-- LEFT IMAGE -->
+
+        <div class="details-image-box">
+
+            <img
+                id="detailProductImage"
+                src=""
+                alt="Product"
+            >
+
+        </div>
+
+
+
+        <!-- RIGHT INFORMATION -->
+
+        <div class="details-info">
+
+
+            <div class="details-category"
+                 id="detailProductCategory">
+
+                PRODUCT
+
+            </div>
+
+
+            <h1 id="detailProductName">
+                Product Name
+            </h1>
+
+
+            <div class="details-rating">
+
+                <span class="stars">
+
+                    ★★★★★
+
+                </span>
+
+                <span>
+                    4.8 (24 Reviews)
+                </span>
+
+            </div>
+
+
+            <div class="details-price"
+                 id="detailProductPrice">
+
+                Rs. 0
+
+            </div>
+
+
+            <p class="details-description"
+               id="detailProductDescription">
+
+                Product description
+
+            </p>
+
+
+            <!-- Quantity -->
+
+            <div class="quantity-area">
+
+                <strong>
+                    Quantity:
+                </strong>
+
+
+                <div class="quantity-control">
+
+                    <button id="minusBtn">
+                        −
+                    </button>
+
+
+                    <span id="quantity">
+                        1
+                    </span>
+
+
+                    <button id="plusBtn">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="details-buttons">
+
+
+                <button
+                    class="details-cart-btn"
+                    id="detailsAddCart">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    Add to Cart
+
+                </button>
+
+
+                <button
+                    class="wishlist-btn"
+                    id="detailsWishlist">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- Product Features -->
+
+            <div class="product-features">
+
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                    <div>
+
+                        <strong>
+                            Free Shipping
+                        </strong>
+
+                        <span>
+                            On orders over $199
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    <div>
+
+                        <strong>
+                            30 Days Return
+                        </strong>
+
+                        <span>
+                            Money back guarantee
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+
+                        <strong>
+                            Secure Payment
+                        </strong>
+
+                        <span>
+                            100% secure checkout
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+
+        <div>
+
+            <h2>SWOO</h2>
+
+            <p>
+                TECH MART
+            </p>
+
+            <p>
+                Your trusted destination for modern
+                technology and electronics.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Customer Service
+            </h3>
+
+            <a href="#">
+                My Account
+            </a>
+
+            <a href="#">
+                Wishlist
+            </a>
+
+            <a href="#">
+                Shopping Cart
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SWOO TECH MART. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/product-details.js"></script>
+
+
+</body>
+
+</html>
